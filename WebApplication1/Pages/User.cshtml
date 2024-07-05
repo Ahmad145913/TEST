@@ -1,0 +1,26 @@
+﻿@page
+@model WebApplication1.Pages.UserModel
+@{
+}
+
+<h2 class="text-center">Test</h2>  <!--Just a test to see user information-->
+
+<div>
+    First Name: @Model.appUser?.FirstName
+</div>
+
+<div>
+    Last Name: @Model.appUser?.lastName
+</div>
+    
+<div>
+    Address: @Model.appUser?.address
+</div>
+
+<div>
+    Phone Number: @Model.appUser?.PhoneNumber
+</div>
+
+<div>
+    CreatedAt: @Model.appUser?.CreatedAt.ToString("dd/MM/yyyy")
+</div>
